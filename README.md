@@ -73,38 +73,36 @@ A computer vision application built with OpenCV that analyzes and understands im
 
 ## FEATURES IN DETAIL
 
-1. Landmark Detection (HAAR + ORB Dual Strategy)
-   - Loads custom-trained HAAR classifiers for each landmark
-   - Falls back to ORB feature matching if HAAR fails
-   - Custom bounding logic merges multiple detections into single accurate box
+### Landmark Detection (HAAR + ORB Dual Strategy)
+- Loads custom-trained HAAR classifiers for each landmark
+- Falls back to ORB feature matching if HAAR fails
+- Custom bounding logic merges multiple detections into single accurate box
 
-2. Face Detection + Mood Estimation
-   - Detects faces → then eyes and smiles within face region
-   - Smile detected → "Happy" & No smile → "Neutral"
-   - Output: Blue boxes (faces), Green boxes (eyes), Red boxes (smiles)
+### Face Detection + Mood Estimation
+- Detects faces → then eyes and smiles within face region
+- Smile detected → "Happy" & No smile → "Neutral"
+- Output: Blue boxes (faces), Green boxes (eyes), Red boxes (smiles)
 
-3. Time-of-Day Classification
-   - Converts to grayscale → analyzes pixel intensity distribution
-   - Classifies as "Day" (bright pixels dominate) or "Night" (dark pixels dominate)
-   - Batch mode auto-sorts into folders
+### Time-of-Day Classification
+- Converts to grayscale → analyzes pixel intensity distribution
+- Classifies as "Day" (bright pixels dominate) or "Night" (dark pixels dominate)
+- Batch mode auto-sorts into folders
 
-4. Similarity Retrieval
-   - Choose comparison method: Color (HSV histogram) or Edges (edge detection)
-   - Returns top 3 most similar images with similarity scores
+### Similarity Retrieval
+- Choose comparison method: Color (HSV histogram) or Edges (edge detection)
+- Returns top 3 most similar images with similarity scores
 
-5. Image Quality Assessment
-   - Calculates brightness (mean pixel), contrast (std dev), sharpness (Laplacian variance)
-   - Provides pass/fail feedback and enhancement suggestions
-   - Displays RGB histogram
+### Image Quality Assessment
+- Calculates brightness (mean pixel), contrast (std dev), sharpness (Laplacian variance)
+- Provides pass/fail feedback and enhancement suggestions
+- Displays RGB histogram
 
-6. Annotation Tools
-   - Draw rectangles, circles, lines, freehand
-   - Color picker + line thickness control
-   - Save annotations without overwriting originals
+### Annotation Tools
+- Draw rectangles, circles, lines, freehand
+- Color picker + line thickness control
+- Save annotations without overwriting originals
 
-## FILES 
+## CONTACT 
 
-- 'CSCI435_Project_Report.pdf' - Complete project documentation
-
-## DISCLAIMER
-**This repository is for viewing purposes only. It is not licensed for copying, modification, or commercial use without explicit permission from the author.**
+- Email ID: sharenmariyamthomas@gmail.com
+- LinkedIn: www.linkedin.com/in/sharenthomas 
